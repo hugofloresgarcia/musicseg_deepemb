@@ -2,6 +2,23 @@
 
 <a href="https://replicate.ai/musicseg_deepemb"><img src="https://img.shields.io/static/v1?label=Replicate&message=Demo and Docker Image&color=blue"></a>
 
+# Run Inference from Docker Container
+
+First, build the docker container
+```bash
+docker build -t musicseg_deepemb .
+```
+
+Then, you can run inference in the container
+```bash
+docker run -it --rm \
+    -v /path/to/audio:/audio \
+    -v /path/to/output:/output \
+    musicseg_deepemb \
+    --wav_file_folder=/audio
+    --output_folder=/output
+```
+
 # Installation
 
 ## Step 1: install non-python dependencies

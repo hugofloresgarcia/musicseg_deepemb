@@ -22,7 +22,7 @@ setup(
       'torch==1.1.0',
       'torchvision==0.2.1',
       'torchsummary==1.5.1',
-      'numpy==1.17.4',
+      # 'numpy',
       'scipy==1.4.1',
       'scikit-learn==0.22.1',
       'audioread==2.1.8',
@@ -31,11 +31,12 @@ setup(
       'resampy==0.2.2',
       'SoundFile==0.10.3.post1',
       'sox==1.3.7',
-      'h5py==2.10.0',
+      # 'h5py==2.10.0',
       'librosa==0.7.0',
       'tensorflow==2.6.0',
       'mir_eval==0.6',
       'madmom==0.16.1',
-      'matplotlib'
+      'matplotlib', 
+      "keras==2.6.0"
    ],
 )
